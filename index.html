@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Nexus | WDD 130 Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <img src="images/logo.png" alt="Design Nexus Logo" class="logo">
+                <h1>Design Nexus</h1>
+                <p class="subtitle">WDD 130 - Web Fundamentals Portfolio</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/site-plan-rafting.html">WWR</a></li>
+                <li><a href="#ice">ICE</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="welcome">
+                <h2>Welcome to My Portfolio</h2>
+                <p>This portal showcases my work in web development, including white water rafting site planning and multiple creative ICE projects.</p>
+            </section>
+
+            <section>
+                <h2>About This Course</h2>
+                <p>WDD 130 is a Web Fundamentals course at Brigham Young University-Idaho. Throughout this course I have learned essential web development skills including HTML5 semantic markup, CSS styling and layout techniques (Flexbox and Grid), responsive design principles, and website planning.</p>
+                <p>I have applied these skills by building a complete site plan for a white water rafting company and completing several Individual Creative Exercises (ICE) that challenged me to create engaging, well-structured web pages.</p>
+            </section>
+
+            <section id="ice">
+                <h2>ICE Projects</h2>
+                <p>Click any project below to open it in a new tab:</p>
+                <ul>
+                    <li><a href="ice/fathersday/index.html" target="_blank">Father's Day</a></li>
+                    <li><a href="ice/apostle_spotlight/apostles.html" target="_blank">Apostle Spotlight</a></li>
+                    <li><a href="ice/favorite_devo/favdevo.html" target="_blank">Favorite Devotional</a></li>
+                    <li><a href="ice/prophet_cards/oaks.html" target="_blank">Prophet Cards</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>White Water Rafting</li>
+                    <li>Gym & Fitness Training</li>
+                    <li>Truck Mechanics & Restoration</li>
+                    <li>Hiking in Oregon</li>
+                    <li>Web Design & Development</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Project Overview</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>White Water Rafting (WWR)</td>
+                            <td>Site plan and branding for River Rush — a complete website plan including purpose, audience, color palette, typography, and wireframes.</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>Father's Day (ICE)</td>
+                            <td>Created a fun, colorful Father's Day webpage with gift ideas organized into Food, Family, and Fun sections. Practiced CSS Grid, Flexbox, hover effects, and responsive design.</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>Apostle Spotlight (ICE)</td>
+                            <td>Showcases members of the First Presidency and Quorum of the Twelve Apostles with photos and information. Focused on semantic HTML and clean card layouts.</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>Favorite Devotional (ICE)</td>
+                            <td>Built a devotional table where users can view and submit their favorite devotionals. Strengthened skills with HTML tables and forms.</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>Prophet Cards (ICE)</td>
+                            <td>Designed a digital card featuring President Dallin H. Oaks with photo, biography, and quote. Practiced thoughtful single-page content presentation.</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Portfolio</td>
+                            <td>This Design Nexus portal page that ties everything together.</td>
+                            <td>Complete</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hi! I'm Austin Glenn, a 21-year-old student at BYU-Idaho. I'm passionate about web development, fitness, mechanics, and outdoor adventures.</p>
+                <img src="images/me.jpg" alt="Austin Glenn" style="max-width: 320px; margin: 25px auto; display: block; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Design Nexus | WDD 130</p>
+            <p>Built with Neue Haas Grotesk / Helvetica Neue and the Grizzly font</p>
+        </footer>
+    </div>
+</body>
+</html>
