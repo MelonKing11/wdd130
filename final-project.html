@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project | Design Nexus | WDD 130 Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 10px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card.lead {
+            border-top-color: var(--primary);
+        }
+
+        .badge {
+            align-self: flex-start;
+            padding: 5px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: white;
+            background: var(--accent);
+        }
+
+        .badge.lead {
+            background: var(--primary);
+        }
+
+        .badge.client {
+            background: var(--medium-blue);
+        }
+
+        .project-card h3 {
+            color: var(--dark-navy);
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .project-card p {
+            flex-grow: 1;
+            color: #475569;
+        }
+
+        .visit-btn {
+            align-self: flex-start;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .visit-btn:hover {
+            background: var(--navy);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <img src="images/logo.png" alt="Design Nexus Logo" class="logo">
+                <h1>Design Nexus</h1>
+                <p class="subtitle">WDD 130 - Web Fundamentals Portfolio</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/site-plan-rafting.html">WWR</a></li>
+                <li><a href="index.html#ice">ICE</a></li>
+                <li><a href="final-project.html">Final Project</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Final Project</h2>
+                <p>For the WDD 130 final project, our class worked in small teams to plan, design, and build complete websites. Each of us rotated through different roles: I served as the <strong>lead developer</strong> on one site, a <strong>junior developer</strong> on two others, and the <strong>client</strong> for a site built to my specifications. Below are the four websites I helped bring to life.</p>
+            </section>
+
+            <section>
+                <h2>The Websites</h2>
+                <div class="project-grid">
+                    <article class="project-card lead">
+                        <span class="badge lead">Lead Developer</span>
+                        <h3>FOOTBALL — Learn the Beautiful Game</h3>
+                        <p>An educational hub that explains the fundamentals of football (soccer): rules, positions, terminology, equipment, and basic strategy for beginners and fans alike. As lead developer, I owned the site architecture, layout, and final build.</p>
+                        <a class="visit-btn" href="https://melonking11.github.io/wdd130-mnyandu/" target="_blank">Visit Site</a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="badge">Junior Developer</span>
+                        <h3>Bench Press Mastery</h3>
+                        <p>A training resource dedicated to proper bench press technique, from beginner basics to advanced form. I contributed as a junior developer, helping build out pages and styling under the lead's direction.</p>
+                        <a class="visit-btn" href="https://yandu4l.github.io/wdd130-hoover/" target="_blank">Visit Site</a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="badge">Junior Developer</span>
+                        <h3>Law School Admissions</h3>
+                        <p>A data-driven guide to top law schools, including median GPA and LSAT scores, to help prospective students build their application strategy. I supported the lead developer with page structure and CSS.</p>
+                        <a class="visit-btn" href="https://hallway5.github.io/wdd130-velasquez/" target="_blank">Visit Site</a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="badge client">Client</span>
+                        <h3>Camping for Dummies</h3>
+                        <p>A beginner-friendly guide that helps first-time campers prepare, stay safe, and enjoy the outdoors. I was the client for this site — I defined the vision, requirements, and feedback while the dev team built it.</p>
+                        <a class="visit-btn" href="https://thoque579.github.io/wdd130-glenn/" target="_blank">Visit Site</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Design Nexus | WDD 130</p>
+            <p>Built with Neue Haas Grotesk / Helvetica Neue and the Grizzly font</p>
+        </footer>
+    </div>
+</body>
+</html>
